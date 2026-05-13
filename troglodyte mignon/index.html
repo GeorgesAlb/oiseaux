@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>troglodyte mignon</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:linear-gradient(135deg,#0d1b2a 0%,#1b3a2a 100%);
+      color:#f0f4e8;font-family:sans-serif;
+      min-height:100vh;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;gap:24px;padding:20px;
+    }
+    h1{font-size:clamp(1.4rem,5vw,2rem);text-align:center;letter-spacing:.03em}
+    .bird{font-size:4rem}
+    audio{width:min(90vw,380px);outline:none}
+    p{font-size:.85rem;opacity:.6;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="bird">🐦</div>
+  <h1>troglodyte mignon</h1>
+  <audio id="a" controls autoplay>
+    <source src="Détail de lobservation - www.oiseauxdesjardins.fr.mp3" type="audio/mpeg">
+  </audio>
+  <p>Scan réalisé avec l'application Oiseaux</p>
+  <script>
+    document.getElementById('a').play().catch(()=>{});
+  </script>
+</body>
+</html>
